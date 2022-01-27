@@ -61,7 +61,7 @@ get_branch () {
 }
 
 get_ziplink () {
-    echo "https://github.com/ashwinstr/sedex_dedex$(get_branch)"
+    echo "https://github.com/ashwinstr/sedex-dedex$(get_branch)"
 }
 
 _setup_repo () {
@@ -80,7 +80,7 @@ _setup_repo () {
 
 _startbot () {
     local bot_dir
-    bot_dir=$(cd $WORK_DIR && ls) && mv "$WORK_DIR/$bot_dir" "sedex_dedex"
+    bot_dir=$(cd $WORK_DIR && ls) && mv "$WORK_DIR/$bot_dir" "sedex-dedex"
     rm -rf $WORK_DIR
     cd "sedex"
     git init > /dev/null 2>&1
