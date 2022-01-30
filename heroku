@@ -55,13 +55,13 @@ get_branch () {
     then
         branch=$(echo $PREF_BRANCH | xargs)
     else
-        branch=alpha
+        branch=main
     fi
     echo "/archive/refs/heads/$branch.zip"
 }
 
 get_ziplink () {
-    echo "https://github.com/ashwinstr/sedex-dedex$(get_branch)"
+    echo "https://github.com/ashwinstr/sedex$(get_branch)"
 }
 
 _setup_repo () {
@@ -80,9 +80,9 @@ _setup_repo () {
 
 _startbot () {
     local bot_dir
-    bot_dir=$(cd $WORK_DIR && ls) && mv "$WORK_DIR/$bot_dir" "sedex-dedex"
+    bot_dir=$(cd $WORK_DIR && ls) && mv "$WORK_DIR/$bot_dir" "sedex"
     rm -rf $WORK_DIR
-    cd "sedex-dedex"
+    cd "sedex"
     git init > /dev/null 2>&1
     echo -e ">><< --- >><<  Starting [sedex]  >><< --- >><<\n" | indent
     python -m jutsu
