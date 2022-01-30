@@ -5,6 +5,7 @@ gitpython
 heroku3
 motor
 psutil
+pymongo
 Pyrogram
 python-decouple
 telegraph
