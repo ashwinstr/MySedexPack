@@ -55,7 +55,7 @@ get_branch () {
     then
         branch=$(echo $PREF_BRANCH | xargs)
     else
-        branch=main
+        branch=alpha
     fi
     echo "/archive/refs/heads/$branch.zip"
 }
