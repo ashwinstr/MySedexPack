@@ -4,6 +4,7 @@ aiohttp
 gitpython
 heroku3
 motor
+psutil
 Pyrogram
 python-decouple
 telegraph
