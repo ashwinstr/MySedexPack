@@ -6,3 +6,4 @@ Pyrogram
 python-decouple
 telegraph
 TgCrypto
+ujson
