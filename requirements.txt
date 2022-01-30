@@ -1,4 +1,5 @@
 # git+https://github.com/ashwinstr/pyrogram.git@x21
+aiohttp
 gitpython
 heroku3
 motor
