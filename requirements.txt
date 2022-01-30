@@ -1,11 +1,11 @@
 # git+https://github.com/ashwinstr/pyrogram.git@x21
 aiofiles
 aiohttp
+dnspython
 gitpython
 heroku3
 motor
 psutil
-pymongo
 Pyrogram
 python-decouple
 telegraph
